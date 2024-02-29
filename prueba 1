@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-10">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comprobante de Pago de Alquiler</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    h1 {
+        text-align: center;
+    }
+    .invoice {
+        margin-top: 20px;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    .invoice td, .invoice th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .invoice tr:nth-child(even){background-color: #f2f2f2;}
+    .invoice tr:hover {background-color: #ddd;}
+    .invoice th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }
+    .date-box {
+        padding: 5px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="date-box">PAGO DE ALQUILER</span></h1>
+        <p><strong>Número de Pago:</strong> ALQ123456</p>
+        <p><strong>Pago Desde:</strong> 1 de Febrero, 2024</p>
+        <p><strong>Pago Hasta:</strong> 29 de Febrero, 2024</p>
+        <p><strong>Nombre del Inquilino:</strong> Juan Pérez</p>
+        <p><strong>Apartamento:</strong>  Apartamento 123</p>
+        <p><strong>Fecha de Pago:</strong> <span class="date-box">29 de Febrero, 2024</span></p>
+        <table class="invoice">
+            <tr>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Alquiler de Apartamento</td>
+                <td>1</td>
+                <td>$800</td>
+                <td>$800</td>
+            </tr>
+        </table>
+        <p><strong>Próxima Fecha de Pago:</strong> <span class="date-box">29 de Marzo, 2024</span></p>
+        <p><strong>Valor Total:</strong> $800</p>
+    </div>
+</body>
+</html>
